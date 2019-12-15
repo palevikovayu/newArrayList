@@ -1,6 +1,8 @@
 package com.company;
 
 import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
 
 public class Main {
 
@@ -31,5 +33,10 @@ public class Main {
         System.out.println(myArrayList);
         System.out.println(myArrayList.size());
         System.out.println(myArrayList.get(3));
+        System.out.println(myArrayList.contains(5));
+        System.out.println(myArrayList.indexOf(9));
+        List<Integer> list = Arrays.asList(2 ,3, 3, 5);
+        myArrayList.addAll(list);
+        System.out.println(myArrayList);
     }
 }
