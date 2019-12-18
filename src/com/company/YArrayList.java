@@ -65,18 +65,7 @@ public class YArrayList<T> {
 
     public void addAll(List<T> list) {
         for (int i = 0; i < list.size(); i++) {
-            if (index < array.length) {
-                array[index] = list.get(i);
-                index++;
-            } else {
-                Object[] array2 = new Object[(array.length * 3) / 2 + 1];
-                for (int j = 0; j < index; j++) {
-                    array2[j] = array[j];
-                }
-                array = array2;
-                array[index] = list.get(i);
-                index++;
-            }
+            add(list.get(i));
         }
     }
 }
